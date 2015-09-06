@@ -1,0 +1,21 @@
+<article class="canvas">
+  <h4>
+    Hello {{name}}
+    |
+    <a ng-click="signout()">Log Out</a>
+  </h4>
+  <p class="total">
+    Total Votes: {{total()}}
+  </p>
+  <div class="chart">
+    <canvas id="doughnut" class="chart chart-doughnut" data="dataset" labels="labels"></canvas>
+  </div>
+  <div class="buttons">
+    <a ng-click="update('first')">Vote 1</a>
+    <a ng-click="update('second')">Vote 2</a>
+    <a ng-click="update('third')">Vote 3</a>
+    <a ng-click="update('forth')">Vote 4</a>
+    <a ng-click="update('fifth')">Vote 5</a>
+    <a ng-click="reset()">Reset</a>
+  </div>
+</article>
